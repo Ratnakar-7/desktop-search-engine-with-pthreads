@@ -44,7 +44,7 @@ The scanner is a producer, as in a producer/consumer code. It should write file 
 Indexer
 -------
 
-There should be one or more indexer threads in your program. The scanner should read feil names from a the scanner thread. An indexer takes as input a file name, opens that file, and then reads all the words in the file. You can use @strtok_r@, separating on whitespace (spaces, tabs, newlines) to find words. For each word it finds, the indexer adds an entry to a hash table with the word and the file name/line number where it appears. The code should look something like this:
+There should be one or more indexer threads in your program. The scanner should read file names from a the scanner thread. An indexer takes as input a file name, opens that file, and then reads all the words in the file. You can use @strtok_r@, separating on whitespace (spaces, tabs, newlines) to find words. For each word it finds, the indexer adds an entry to a hash table with the word and the file name/line number where it appears. The code should look something like this:
 
 ```
   FILE * file;
